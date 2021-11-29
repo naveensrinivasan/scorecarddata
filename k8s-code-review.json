@@ -1,0 +1,1122 @@
+[
+ {
+  "Name": "github.com/julienschmidt/httprouter",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jstemmer/go-junit-report",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 24",
+  "Reason": "GitHub code reviews found for 11 commits out of the last 24 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/davecgh/go-spew",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 28 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/PuerkitoBio/purell",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 15",
+  "Reason": "GitHub code reviews found for 7 commits out of the last 15 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/mitchellh/go-homedir",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 10",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 10 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/coreos/go-oidc",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/smartystreets/assertions",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 11",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 11 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/ryanuber/columnize",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 10",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 10 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/julienschmidt/httprouter",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jmespath/go-jmespath",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 10 commits out of the last 24 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-uuid",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 23",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/lithammer/dedent",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 5",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 5 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/MakeNowJust/heredoc",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 7",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/russross/blackfriday",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/russross/blackfriday",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/golang/groupcache",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/golang/mock",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/PuerkitoBio/purell",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 7 commits out of the last 15 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jonboulle/clockwork",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 15",
+  "Reason": "GitHub code reviews found for 6 commits out of the last 15 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-msgpack",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 9",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 9 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jonboulle/clockwork",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 6 commits out of the last 15 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/sirupsen/logrus",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/spf13/viper",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-cleanhttp",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 22",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/golang/mock",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/sirupsen/logrus",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/rogpeppe/fastuuid",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 12",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 5 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/MakeNowJust/heredoc",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/smartystreets/assertions",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 11 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jstemmer/go-junit-report",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 11 commits out of the last 24 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-cleanhttp",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 7",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/golang/groupcache",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/mitchellh/go-homedir",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 10 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/spf13/viper",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/coreos/go-oidc",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/rogpeppe/fastuuid",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 5",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 5 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/jmespath/go-jmespath",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 24",
+  "Reason": "GitHub code reviews found for 10 commits out of the last 24 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-uuid",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 7",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 7 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/davecgh/go-spew",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 28",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 28 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/ryanuber/columnize",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 10 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/posener/complete",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/posener/complete",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 30 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/hashicorp/go-msgpack",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 9 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/lithammer/dedent",
+  "Check": "Code-Review",
+  "Score": 4,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 29",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 5 -- score normalized to 4"
+ },
+ {
+  "Name": "github.com/google/uuid",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 15 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/sergi/go-diff",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/go-stack/stack",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 6",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 6 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/google/btree",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 15",
+  "Reason": "GitHub code reviews found for 8 commits out of the last 15 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/OneOfOne/xxhash",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 9",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/munnerz/goautoneg",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 2",
+  "Reason": "GitHub code reviews found for 1 commits out of the last 2 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/gorilla/mux",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/gorilla/mux",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mattn/go-runewidth",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 25",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 25 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/kisielk/gotool",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 9",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/kr/text",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 21",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 4 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/armon/go-radix",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 6",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 6 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/google/btree",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 8 commits out of the last 15 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/munnerz/goautoneg",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 9",
+  "Reason": "GitHub code reviews found for 1 commits out of the last 2 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/xlab/treeprint",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 29",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mvdan/xurls",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 8 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mvdan/xurls",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 8",
+  "Reason": "GitHub code reviews found for 4 commits out of the last 8 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/kr/text",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 4",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 4 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/google/uuid",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 15 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mattn/go-runewidth",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 25 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/xlab/treeprint",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 9",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/coredns/corefile-migration",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/sergi/go-diff",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/fatih/color",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/armon/go-radix",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 26",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 6 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/go-stack/stack",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 6 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/OneOfOne/xxhash",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/coredns/corefile-migration",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/kisielk/gotool",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 9 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/fatih/color",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mailru/easyjson",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/mailru/easyjson",
+  "Check": "Code-Review",
+  "Score": 5,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 17 commits out of the last 30 -- score normalized to 5"
+ },
+ {
+  "Name": "github.com/prometheus/client_model",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 27",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 18 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/cyphar/filepath-securejoin",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mitchellh/gox",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 19 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-logfmt/logfmt",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-gl/glfw",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-openapi/jsonreference",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mitchellh/go-wordwrap",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 15",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/googleapis/gnostic",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/cockroachdb/errors",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/chai2010/gettext-go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-openapi/jsonpointer",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/gregjones/httpcache",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 19 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-gl/glfw",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/NYTimes/gziphandler",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/json-iterator/go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/cyphar/filepath-securejoin",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mwitkow/go-conntrack",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 25",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mwitkow/go-conntrack",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/quobyte/api",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 25",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 25 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-openapi/jsonreference",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 5",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/magiconair/properties",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 20",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 20 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/antlr/antlr4",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/clusterhq/flocker-go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 8",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 8 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/magiconair/properties",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 20 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/monochromegane/go-gitignore",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/quobyte/api",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 16 commits out of the last 25 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/benbjohnson/clock",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 21 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/gregjones/httpcache",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 19 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/monochromegane/go-gitignore",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 5",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/libopenstorage/openstorage",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/hashicorp/errwrap",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/stretchr/objx",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/clusterhq/flocker-go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 8 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/rubiojr/go-vhd",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/prometheus/client_model",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 18",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 18 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/chai2010/gettext-go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/googleapis/gnostic",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/libopenstorage/openstorage",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/rubiojr/go-vhd",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/pquerna/cachecontrol",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 13",
+  "Reason": "GitHub code reviews found for 9 commits out of the last 13 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/benbjohnson/clock",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 21",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 21 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/json-iterator/go",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/hashicorp/errwrap",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 17",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/antlr/antlr4",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mitchellh/gox",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 19",
+  "Reason": "GitHub code reviews found for 13 commits out of the last 19 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/cockroachdb/errors",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/bits-and-blooms/bitset",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/stretchr/objx",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/bits-and-blooms/bitset",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 18 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-openapi/jsonpointer",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/pquerna/cachecontrol",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 9 commits out of the last 13 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/mitchellh/go-wordwrap",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 3",
+  "Reason": "GitHub code reviews found for 2 commits out of the last 3 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/NYTimes/gziphandler",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 20 commits out of the last 30 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/go-logfmt/logfmt",
+  "Check": "Code-Review",
+  "Score": 6,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 5",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 5 -- score normalized to 6"
+ },
+ {
+  "Name": "github.com/beorn7/perks",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 4 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/miekg/dns",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 21 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/miekg/dns",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 21 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/opencontainers/selinux",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/daviddengcn/go-colortext",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 4 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mattn/go-isatty",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/hashicorp/go-sockaddr",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 16 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mohae/deepcopy",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 7 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mohae/deepcopy",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 7",
+  "Reason": "GitHub code reviews found for 5 commits out of the last 7 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/golang/protobuf",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 23 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/moby/ipvs",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 10 commits out of the last 14 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mattn/go-colorable",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 29",
+  "Reason": "GitHub code reviews found for 21 commits out of the last 29 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/moby/ipvs",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 14",
+  "Reason": "GitHub code reviews found for 10 commits out of the last 14 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/daviddengcn/go-colortext",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 4",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 4 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/hashicorp/go-immutable-radix",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 17",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 17 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/cpuguy83/go-md2man",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/golang/protobuf",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 4 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 23 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/opencontainers/selinux",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/grpc-ecosystem/go-grpc-prometheus",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 23 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/beorn7/perks",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 4",
+  "Reason": "GitHub code reviews found for 3 commits out of the last 4 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mattn/go-isatty",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/cpuguy83/go-md2man",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 22 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/docker/go-units",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 20",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 20 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/mattn/go-colorable",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 21 commits out of the last 29 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/form3tech-oss/jwt-go",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 6 commits out of the last 8 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/form3tech-oss/jwt-go",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 8",
+  "Reason": "GitHub code reviews found for 6 commits out of the last 8 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/docker/go-units",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 14 commits out of the last 20 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/grpc-ecosystem/go-grpc-prometheus",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 23 commits out of the last 30 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/hashicorp/go-sockaddr",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Prow code reviews found for 0 commits out of the last 16",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 16 -- score normalized to 7"
+ },
+ {
+  "Name": "github.com/hashicorp/go-immutable-radix",
+  "Check": "Code-Review",
+  "Score": 7,
+  "Details": "Info: Gerrit code reviews found for 0 commits out of the last 30",
+  "Reason": "GitHub code reviews found for 12 commits out of the last 17 -- score normalized to 7"
+ }
+]
