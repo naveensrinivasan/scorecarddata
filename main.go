@@ -55,7 +55,7 @@ func main() {
 		WHERE
 		 c.name in ("Code-Review") and 
 		 c.score < 8 and c.score > 3 and
-		repo.name IN ( %s)
+		repo.name IN ( @repos)
 		group by repo.name,
 		  c.name,
 		  c.Score,
@@ -78,7 +78,7 @@ func main() {
 	}
 	defer client.Close()
 
-	rows, err := query(ctx, fmt.Sprintf(sql, string(data)), client)
+	rows, err := query(ctx, sql, string(data), client)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -93,9 +93,26 @@ func main() {
 	fmt.Println(string(j))
 }
 
-func query(ctx context.Context, sql string, client *bigquery.Client) (*bigquery.RowIterator, error) {
+func query(ctx context.Context, sql, repos string, client *bigquery.Client) (*bigquery.RowIterator, error) {
 	query := client.Query(sql)
-	return query.Read(ctx)
+	query.Parameters = []bigquery.QueryParameter{
+		{
+			Name:  "repos",
+			Value: repos,
+		},
+	}
+	job, err := query.Run(ctx)
+	if err != nil {
+		return nil, err
+	}
+	status, err := job.Wait(context.TODO())
+	if err != nil {
+		return nil, err
+	}
+	if err := status.Err(); err != nil {
+		return nil, err
+	}
+	return job.Read(context.TODO())
 }
 
 func printResults(w io.Writer, iter *bigquery.RowIterator) ([]scorecard, error) {
