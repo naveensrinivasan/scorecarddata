@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 
 	"cloud.google.com/go/bigquery"
 	"google.golang.org/api/iterator"
@@ -22,6 +23,8 @@ type scorecard struct {
 }
 
 func main() {
+	allchecks := []string{"Code-Review"}
+	// sosChecks := []string{"Code-Review","Branch-Protection","Pinned-Dependencies","Dependency-Update-Tool","Fuzzing"}
 	if len(os.Args) < 2 {
 		log.Fatal("Please provide the path of the go.mod/go.sum location")
 	}
@@ -37,7 +40,6 @@ func main() {
 	| sort -u \
 	| cut -d/ -f1-3 \
 	| awk '{print $1}' \
-	| sed "s/^/\"/;s/$/\"/" \
 	| tr '\n' ',' | head -c -1
 	`
 	sql :=
@@ -53,9 +55,9 @@ func main() {
 		  UNNEST(checks) AS c,
 		  UNNEST(c.details) d
 		WHERE
-		 c.name in ("Code-Review") and 
-		 c.score < 8 and c.score > 3 and
-		repo.name IN ( %s)
+		 c.name in unnest(@checks) and 
+		 c.score < 8 and 
+		repo.name IN unnest(@repos)
 		group by repo.name,
 		  c.name,
 		  c.Score,
@@ -69,7 +71,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	parameters := []string{}
+	parameters = append(parameters, strings.Split(string(data), ",")...)
 	ctx := context.Background()
 
 	client, err := bigquery.NewClient(ctx, projectID)
@@ -78,7 +81,7 @@ func main() {
 	}
 	defer client.Close()
 
-	rows, err := query(ctx, fmt.Sprintf(sql, string(data)), client)
+	rows, err := query(ctx, sql, allchecks, parameters, client)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -93,9 +96,19 @@ func main() {
 	fmt.Println(string(j))
 }
 
-func query(ctx context.Context, sql string, client *bigquery.Client) (*bigquery.RowIterator, error) {
+func query(ctx context.Context, sql string, allchecks, repos []string, client *bigquery.Client) (*bigquery.RowIterator, error) {
 	query := client.Query(sql)
-	return query.Read(ctx)
+	query.Parameters = []bigquery.QueryParameter{
+		{
+			Name:  "repos",
+			Value: repos,
+		},
+		{
+			Name:  "checks",
+			Value: allchecks,
+		},
+	}
+	return query.Read(context.TODO())
 }
 
 func printResults(w io.Writer, iter *bigquery.RowIterator) ([]scorecard, error) {
