@@ -1,5 +1,5 @@
 package deps
 
 type Deps interface {
-	FetchDependecies(directory string) ([]string, error)
+	FetchDependencies(directory string) ([]string, error)
 }

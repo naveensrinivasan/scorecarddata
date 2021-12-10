@@ -1,10 +1,51 @@
 Scorecarddata
 ===
-This tool will parse the `go.mod/so.sum` dependencies of a project and fetches the scorecard data for its dependencies. It uses the Google Bigquery data https://github.com/ossf/scorecard#public-data`openssf:scorecardcron.scorecard-v2_latest` to fetch the results
+This tool will parse the `go.mod/go.sum` project dependencies and fetches the [scorecard](https://github.com/ossf/scorecard) data for its dependencies. 
+It uses the Google Bigquery data https://github.com/ossf/scorecard#public-data`openssf:scorecardcron.scorecard-v2_latest` to fetch the results.
+
+##### what does this tool do?
+
+```
+- parses go.mod/go.sum for your project
+- get the dependecies github URL's
+- use the above dependencies to filter the data from Bigquery which scorecard cron jobs updates every week.
+- export the results as json
+```
+#### What are the results from the tool look like?
+```json=
+[
+ {
+    "Name": "github.com/containerd/ttrpc",
+    "Check": "Pinned-Dependencies",
+    "Score": 7,
+    "Details": "Warn: dependency not pinned by hash (job 'Run Protobuild'): .github/workflows/ci.yml:98",
+    "Reason": "dependency not pinned by hash detected -- score normalized to 7"
+  },
+  {
+    "Name": "github.com/kisielk/errcheck",
+    "Check": "Pinned-Dependencies",
+    "Score": 7,
+    "Details": "Info: Third-party actions are pinned",
+    "Reason": "dependency not pinned by hash detected -- score normalized to 7"
+  }
+]
+```
+
+## What is scorecard?
+
+>We created Scorecards to give consumers of open-source projects an easy way to judge whether their dependencies are safe.
+
+> Scorecards is an automated tool that assesses a number of important heuristics ("checks") associated with software security and assigns each check a score of 0-10. You can use these scores to understand specific areas to improve in order to strengthen the security posture of your project. You can also assess the risks that dependencies introduce, and make informed decisions about accepting these risks, evaluating alternative solutions, or working with the maintainers to make improvements.
+
+https://github.com/ossf/scorecard#what-is-scorecards
+
+
+## Why should I use this over running the scorecard CLI?
+The scorecard CLI would take time to fetch hundreds of repositories, and the GitHub's API will be throttled. This project helps solve the problem by bringing the data from the BigQuery table, which scorecard runs as part of a weekly cron job.
 
 
 ## How to run this?
-`go run main.go ~/go/src/github.com/naveensrinivasan/sigstore | jq`
+`scorecarddata go  -m /home/sammy/go/src/github.com/naveensrinivasan/kubernetes --GOOGLE_CLOUD_PROJECT openssf| jq`
 
 ## Prerequisites 
 
@@ -12,12 +53,33 @@ This tool will parse the `go.mod/so.sum` dependencies of a project and fetches t
 - https://cloud.google.com/bigquery/public-data
 
 ## Can I get additional checks other than the default?
-Yes, the `sql` to fetch the scorecard data can be modified.
+Yes, these are options within command line.
+```
+./scorecarddata go --help
+ This will parse the go.mod using go list and extract the github.com dependecies.
+	It uses the extracted dependecies to query the bigquery scorecard table to fetch the results.
+and usage of using your command.
+For example:
+scorecarddata go  -m /home/sammy/go/src/github.com/naveensrinivasan/kubernetes --GOOGLE_CLOUD_PROJECT openssf
 
-## Why should I use this over running the scorecard CLI?
-The scorecard CLI would take time to fetch hundreds of repositories, and the GitHub's API will be throttled.
+Usage:
+  scorecarddata go [flags]
+
+Flags:
+  -m, --go-mod-location string   The directory of the go.mod location
+  -h, --help                     help for go
+
+Global Flags:
+      --GOOGLE_CLOUD_PROJECT string    The ENV variable that will be used in the BigQuery for querying.
+      --config string                  config file (default is $HOME/.scorecarddata.yaml)
+      --scorecard_checks stringArray   The scorecard checks to filter by.Example CI-Tests,Binary-Artifacts etc.https://github.com/ossf/scorecard/blob/main/docs/checks.md (default [Code-Review,Branch-Protection,Pinned-Dependencies,Dependency-Update-Tool,Fuzzing])
+```
+
+
 
 ### How are the `go` dependencies parsed?
 It is bash goo :face_palm: More on this [explainshell](https://explainshell.com/explain?cmd=go+list+-m+-f+%27%7B%7Bif+not+%28or++.Main%29%7D%7D%7B%7B.Path%7D%7D%7B%7Bend%7D%7D%27+all+++%7C+grep+%22%5Egithub%22+%7C+sort+-u+%7C+cut+-d%2F+-f1-3+%7Cawk+%27%7Bprint+%241%7D%27%7C+sed+%22s%2F%5E%2F%5C%22%2F%3Bs%2F%24%2F%5C%22%2F%22%7C++tr+%27%5Cn%27+%27%2C%27+%7C+head+-c+-1)
 
-
+### How about support for other languages? 
+If you know how to parse the deps for other languages please do a PR.
+The interface that needs to be implemented is https://github.com/naveensrinivasan/scorecarddata/blob/70e7880c642d219f28d3d3738506c2a34d9a0882/pkg/deps/deps.go#L3 

@@ -14,7 +14,7 @@ func NewGolangDeps() Deps {
 
 // FetchDependecies parses the dependencies in the go.mod using the `go list command`
 // This functions expects the directory to contain the go.mod file.
-func (g golang) FetchDependecies(directory string) ([]string, error) {
+func (g golang) FetchDependencies(directory string) ([]string, error) {
 	modquery := `
 	go list -m -f '{{if not (or  .Main)}}{{.Path}}{{end}}' all \
 	| grep "^github" \

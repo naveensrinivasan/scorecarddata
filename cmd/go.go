@@ -30,7 +30,7 @@ var goCmd = &cobra.Command{
 	Use:   "go",
 	Short: "Parses go.mod dependecies and fetches the data from scorecard bigquery for those repositories.",
 	Long: ` This will parse the go.mod using go list and extract the github.com dependecies.
-	It uses the extracted dependecies to query the bigquery scorecard table to fetch the results.
+	It uses the extracted dependencies to query the bigquery scorecard table to fetch the results.
 and usage of using your command. 
 For example:
 scorecarddata go  -m /home/sammy/go/src/github.com/naveensrinivasan/kubernetes --GOOGLE_CLOUD_PROJECT openssf
@@ -52,7 +52,7 @@ scorecarddata go  -m /home/sammy/go/src/github.com/naveensrinivasan/kubernetes -
 		}
 
 		d := deps.NewGolangDeps()
-		deps, err := d.FetchDependecies(modFileLocation)
+		deps, err := d.FetchDependencies(modFileLocation)
 		if err != nil {
 			log.Fatal(err)
 		}
