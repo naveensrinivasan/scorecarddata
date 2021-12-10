@@ -30,6 +30,15 @@ It uses the Google Bigquery data https://github.com/ossf/scorecard#public-data`o
   }
 ]
 ```
+#### We can't fix everything/we would like to exclude some results from the check. How can we do that?
+The results can exclude by providing an exclusions file. The repository has an example for the exclusion file.
+The exclusion file needs to have the check,repository that needs to be excluded in a line.
+```csv
+Pinned-Dependencies,github.com/godbus/dbus
+Pinned-Dependencies,github.com/kisielk/errcheck
+```
+From the above example the Pinned-Dependencies check failures from github.com/godbus/dbus and github.com/kisielk/errcheck would be excluded in the results.
+
 
 ## What is scorecard?
 
@@ -55,24 +64,27 @@ The scorecard CLI would take time to fetch hundreds of repositories, and the Git
 ## Can I get additional checks other than the default?
 Yes, these are options within command line.
 ```
-./scorecarddata go --help
- This will parse the go.mod using go list and extract the github.com dependecies.
-	It uses the extracted dependecies to query the bigquery scorecard table to fetch the results.
-and usage of using your command.
-For example:
-scorecarddata go  -m /home/sammy/go/src/github.com/naveensrinivasan/kubernetes --GOOGLE_CLOUD_PROJECT openssf
+./scorecarddata --help
+scorecarddata uses the scorecard bigquery to fetch results for dependecies.
 
 Usage:
-  scorecarddata go [flags]
+  scorecarddata [flags]
+  scorecarddata [command]
+
+Available Commands:
+  completion  generate the autocompletion script for the specified shell
+  go          Parses go.mod dependecies and fetches the data from scorecard bigquery for those repositories.
+  help        Help about any command
 
 Flags:
-  -m, --go-mod-location string   The directory of the go.mod location
-  -h, --help                     help for go
-
-Global Flags:
       --GOOGLE_CLOUD_PROJECT string    The ENV variable that will be used in the BigQuery for querying.
       --config string                  config file (default is $HOME/.scorecarddata.yaml)
+      --exclusions-file string         A file with exclusions comma separated by check and value. Example Code-Review,github.com/ossf/scorecard
+  -h, --help                           help for scorecarddata
       --scorecard_checks stringArray   The scorecard checks to filter by.Example CI-Tests,Binary-Artifacts etc.https://github.com/ossf/scorecard/blob/main/docs/checks.md (default [Code-Review,Branch-Protection,Pinned-Dependencies,Dependency-Update-Tool,Fuzzing])
+  -t, --toggle                         Help message for toggle
+
+Use "scorecarddata [command] --help" for more information about a command.
 ```
 
 

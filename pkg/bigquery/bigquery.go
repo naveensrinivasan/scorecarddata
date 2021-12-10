@@ -21,18 +21,24 @@ type Scorecard struct {
 	Reason string `bigquery:"reason"`
 }
 
+// Key is used for ignoring exclude from the results.
+// Example Code-Review,github.com/kubernetes/kubernetes
+type Key struct {
+	Check, Repoistory string
+}
+
 type (
 	bigquery struct{ project string }
 	Bigquery interface {
 		// FetchScorecardData fetches scorecard data from Google Bigquery.
 		// The checks are the scorecard that are filetred from the bigquery table.
-		FetchScorecardData(repos, checks []string) ([]Scorecard, error)
+		FetchScorecardData(repos, checks []string, exclusions map[Key]bool) ([]Scorecard, error)
 	}
 )
 
 // FetchScorecardData fetches scorecard data from Google Bigquery.
 // The checks are the scorecard that are filetred from the bigquery table.
-func (b bigquery) FetchScorecardData(repos, checks []string) ([]Scorecard, error) {
+func (b bigquery) FetchScorecardData(repos, checks []string, exclusions map[Key]bool) ([]Scorecard, error) {
 	if len(checks) == 0 {
 		return nil, fmt.Errorf("checks length cannot be 0")
 	}
@@ -74,7 +80,7 @@ func (b bigquery) FetchScorecardData(repos, checks []string) ([]Scorecard, error
 		return nil, err
 	}
 
-	result, err := fetchResults(rows)
+	result, err := fetchResults(rows, exclusions)
 	if err != nil {
 		return nil, err
 	}
@@ -102,7 +108,7 @@ func query(ctx context.Context, sql string, allchecks, repos []string,
 	return query.Read(context.TODO())
 }
 
-func fetchResults(iter *bq.RowIterator) ([]Scorecard, error) {
+func fetchResults(iter *bq.RowIterator, exclusions map[Key]bool) ([]Scorecard, error) {
 	rows := []Scorecard{}
 	for {
 		var row Scorecard
@@ -112,6 +118,10 @@ func fetchResults(iter *bq.RowIterator) ([]Scorecard, error) {
 		}
 		if err != nil {
 			return nil, err
+		}
+		// If the particular item is in the exclude list ignore it in the results.
+		if _, ok := exclusions[Key{Check: row.Check, Repoistory: row.Name}]; ok {
+			continue
 		}
 		rows = append(rows, row)
 	}

@@ -47,6 +47,7 @@ func init() {
 	cobra.OnInitialize(initConfig)
 
 	projectID := ""
+	ex := ""
 	checks := []string{"Code-Review", "Branch-Protection", "Pinned-Dependencies", "Dependency-Update-Tool", "Fuzzing"}
 	rootCmd.PersistentFlags().StringVar(&projectID, "GOOGLE_CLOUD_PROJECT", "",
 		"The ENV variable that will be used in the BigQuery for querying.")
@@ -54,11 +55,11 @@ func init() {
 	rootCmd.PersistentFlags().StringArray("scorecard_checks", checks,
 		"The scorecard checks to filter by.Example CI-Tests,Binary-Artifacts etc.https://github.com/ossf/scorecard/blob/main/docs/checks.md")
 
+	rootCmd.PersistentFlags().String("exclusions-file", ex, "A file with exclusions comma separated by check and value. Example Code-Review,github.com/ossf/scorecard")
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.scorecarddata.yaml)")
 
 	rootCmd.AddCommand()
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
-	rootCmd.Flags().BoolP("sos", "s", false, "fetches sos.dev checks")
 }
 
 // initConfig reads in config file and ENV variables if set.
