@@ -1,4 +1,5 @@
-[![Go](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml)
+[![Go](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml) 
+[![CodeQL](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/codeql-analysis.yml)
 # Scorecarddata
 
 ## Overview
