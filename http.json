@@ -1,0 +1,8 @@
+{
+  "repositories": [
+    "github.com/stretchr/objx"
+  ],
+  "checks": [
+    "Pinned-Dependencies"
+    ]
+}

@@ -119,9 +119,11 @@ func fetchResults(iter *bq.RowIterator, exclusions map[Key]bool) ([]Scorecard, e
 		if err != nil {
 			return nil, err
 		}
-		// If the particular item is in the exclude list ignore it in the results.
-		if _, ok := exclusions[Key{Check: row.Check, Repoistory: row.Name}]; ok {
-			continue
+		if exclusions != nil {
+			// If the particular item is in the exclude list ignore it in the results.
+			if _, ok := exclusions[Key{Check: row.Check, Repoistory: row.Name}]; ok {
+				continue
+			}
 		}
 		rows = append(rows, row)
 	}
