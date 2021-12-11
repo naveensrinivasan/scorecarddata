@@ -1,10 +1,8 @@
-[![Go](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml) 
-[![CodeQL](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/codeql-analysis.yml)
 # Scorecarddata
 
 ## Overview
 - [What Is Scorecards?](#what-is-scorecards)
-- [What Is Scorecarddata?](#what-is-scorecardsdata)
+- [What Is scorecarddata?](#what-is-Scorecarddata)
 - [Why should I use this over running the scorecard CLI?](#Why-should-I-use-this-over-running-the-scorecard-CLI)
 - [What does Scorecarddata do?](#what-does-scorecarddata-do)
 
@@ -13,7 +11,9 @@
 - [What are the prerequisites to run this?](#What-are-the-prerequisites-to-run)
 - [Can I get additional checks other than the default?](#Can-I-get-additional-checks-other-than-the-default)
 - [What are the results from the tool look like?](#What-are-the-results-from-the-tool-look-like)
+- [Can I use this in CI and exclude results that I think are false positives?](#Can-I-use-this-in-CI-and-exclude-results-that-I-think-are-false-positives)
 - [Using it as a server](#Using-it-as-a-server)
+
 
 ## Miscellaneous
 - [How are the `go` dependencies parsed?](#How-are-the-go-dependencies-parsed)
@@ -28,7 +28,7 @@
 
 https://github.com/ossf/scorecard#what-is-scorecards
 
-### what is Scorecarddata?
+### what is scorecarddata?
 
 Scorecardsdata is a tool that will parse the `go.mod/go.sum` project dependencies and fetches the [scorecard](https://github.com/ossf/scorecard) data for its dependencies. 
 It uses the Google Bigquery data https://github.com/ossf/scorecard#public-data`openssf:scorecardcron.scorecard-v2_latest` to fetch the results.
@@ -99,7 +99,13 @@ Use "scorecarddata [command] --help" for more information about a command.
   }
 ]
 ```
-
+### Can I use this in CI and exclude results that I think are false positives?
+Yes, results can be excluded by providing an `--exclusions-file` with `check` and `repository`
+```
+Pinned-Dependencies,github.com/godbus/dbus
+Pinned-Dependencies,github.com/kisielk/errcheck
+```
+`scorecarddata go -m . --GOOGLE_CLOUD_PROJECT openssf --exclusions-file ./exclusions --scorecard_checks Pinned-Dependencies`
 ### Using it as a server
 
 The Scorecarddata can be used as a server to serve request for `checks` and `repositories`. 
@@ -119,6 +125,8 @@ This can be posted to the server to get results.
     ]
 }
 ```
+
+## Miscellaneous
 
 ### How are the `go` dependencies parsed?
 It is bash goo :face_palm: More on this [explainshell](https://explainshell.com/explain?cmd=go+list+-m+-f+%27%7B%7Bif+not+%28or++.Main%29%7D%7D%7B%7B.Path%7D%7D%7B%7Bend%7D%7D%27+all+++%7C+grep+%22%5Egithub%22+%7C+sort+-u+%7C+cut+-d%2F+-f1-3+%7Cawk+%27%7Bprint+%241%7D%27%7C+sed+%22s%2F%5E%2F%5C%22%2F%3Bs%2F%24%2F%5C%22%2F%22%7C++tr+%27%5Cn%27+%27%2C%27+%7C+head+-c+-1)
