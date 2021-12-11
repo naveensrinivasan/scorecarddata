@@ -1,3 +1,4 @@
+[![Go](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml/badge.svg)](https://github.com/naveensrinivasan/scorecarddata/actions/workflows/go.yml)
 # Scorecarddata
 
 ## Overview
