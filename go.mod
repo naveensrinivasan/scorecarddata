@@ -13,7 +13,6 @@ require (
 	github.com/spf13/viper v1.9.0
 	github.com/ugorji/go v1.2.6 // indirect
 	golang.org/x/crypto v0.0.0-20211209193657-4570a0811e8b // indirect
-	golang.org/x/sys v0.0.0-20211210111614-af8b64212486 // indirect
 	golang.org/x/text v0.3.7 // indirect
-	google.golang.org/api v0.62.0
+	google.golang.org/api v0.63.0
 )
