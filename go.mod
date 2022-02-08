@@ -10,5 +10,5 @@ require (
 	github.com/spf13/viper v1.10.1
 	github.com/ugorji/go v1.2.6 // indirect
 	golang.org/x/crypto v0.0.0-20211209193657-4570a0811e8b // indirect
-	google.golang.org/api v0.67.0
+	google.golang.org/api v0.68.0
 )
