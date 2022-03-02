@@ -3,7 +3,7 @@ module github.com/naveensrinivasan/scorecarddata
 go 1.16
 
 require (
-	cloud.google.com/go/bigquery v1.28.0
+	cloud.google.com/go/bigquery v1.29.0
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
 	github.com/spf13/cobra v1.3.0
