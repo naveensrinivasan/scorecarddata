@@ -50,7 +50,7 @@ func Run() {
 			return
 		}
 		bq := bigquery.NewBigquery("openssf")
-		result, err := bq.FetchScorecardData(json.Repositories, json.Checks, nil)
+		result, err := bq.FetchScorecardData(json.Repositories[0])
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		}
