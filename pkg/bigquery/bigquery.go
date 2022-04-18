@@ -5,11 +5,12 @@ import (
 	"fmt"
 
 	bq "cloud.google.com/go/bigquery"
+	"cloud.google.com/go/civil"
 	"google.golang.org/api/iterator"
 )
 
 type Scorecard struct {
-	Date string `json:"date" bigquery:"date"`
+	Date civil.Date `json:"date" bigquery:"date"`
 	Repo struct {
 		Name   string `json:"name" bigquery:"name"`
 		Commit string `json:"commit" bigquery:"commit"`
@@ -65,10 +66,9 @@ type (
 func (b bigquery) FetchScorecardData(repos, checks []string, exclusions map[Key]bool) ([]Scorecard, error) {
 	fmt.Println(len(repos))
 	sql := `SELECT * FROM ` +
-		"`openssf.scorecardcron.scorecard-v2_latest `" +
-		`WHERE repo.name like '%scorecard%'
-limit 1
-`
+		"`openssf.scorecardcron.scorecard-v2_latest` " +
+		`WHERE repo.name like @repos LIMIT 1`
+
 	ctx := context.Background()
 
 	client, err := bq.NewClient(ctx, b.project)
@@ -78,7 +78,7 @@ limit 1
 
 	defer client.Close()
 
-	rows, err := query(ctx, sql, checks, repos, client)
+	rows, err := query(ctx, sql, checks[0], repos[0], client)
 	if err != nil {
 		return nil, err
 	}
@@ -95,10 +95,16 @@ func NewBigquery(projectid string) Bigquery {
 	return bigquery{projectid}
 }
 
-func query(ctx context.Context, sql string, allchecks, repos []string,
+func query(ctx context.Context, sql string, allchecks, repos string,
 	client *bq.Client,
 ) (*bq.RowIterator, error) {
 	query := client.Query(sql)
+	query.Parameters = []bq.QueryParameter{
+		{
+			Name:  "repos",
+			Value: repos,
+		},
+	}
 	return query.Read(context.TODO())
 }
 
