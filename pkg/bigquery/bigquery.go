@@ -9,6 +9,30 @@ import (
 )
 
 type Scorecard struct {
+	Date string `json:"date" bigquery:"date"`
+	Repo struct {
+		Name   string `json:"name" bigquery:"name"`
+		Commit string `json:"commit" bigquery:"commit"`
+	} `json:"repo" bigquery:"repo"`
+	Scorecard struct {
+		Version string `json:"version" bigquery:"version"`
+		Commit  string `json:"commit" bigquery:"commit"`
+	} `json:"scorecard" bigquery:"scorecard"`
+	Checks []struct {
+		Name          string `json:"name" bigquery:"name"`
+		Documentation struct {
+			Short string `json:"short" bigquery:"short"`
+			URL   string `json:"url" bigquery:"url"`
+		} `json:"documentation" bigquery:"documentation"`
+		Score   int      `json:"score" bigquery:"score"`
+		Reason  string   `json:"reason" bigquery:"reason"`
+		Details []string `json:"details" bigquery:"details"`
+	} `json:"checks" bigquery:"checks"`
+
+	Score float64 `json:"score" bigquery:"score"`
+}
+
+type ScorecardOld struct {
 	// Name of the GitHub repository
 	Name string `bigquery:"name"`
 	// Scorecard check
@@ -39,33 +63,12 @@ type (
 // FetchScorecardData fetches scorecard data from Google Bigquery.
 // The checks are the scorecard that are filetred from the bigquery table.
 func (b bigquery) FetchScorecardData(repos, checks []string, exclusions map[Key]bool) ([]Scorecard, error) {
-	if len(checks) == 0 {
-		return nil, fmt.Errorf("checks length cannot be 0")
-	}
-
-	sql :=
-		`
-		SELECT
-		 distinct(repo.name),
-		  c.name as check,
-		  c.Score as score,
-		  d as details,
-		  c.Reason as reason
-		FROM` + "`openssf.scorecardcron.scorecard-v2_latest`," +
-			`
-		  UNNEST(checks) AS c,
-		  UNNEST(c.details) d
-		WHERE
-		 c.name in unnest(@checks) and 
-		 c.score < 8 and 
-		repo.name IN unnest(@repos)
-		group by repo.name,
-		  c.name,
-		  c.Score,
-		  d,
-		  reason
-		order by score
-	`
+	fmt.Println(len(repos))
+	sql := `SELECT * FROM ` +
+		"`openssf.scorecardcron.scorecard-v2_latest `" +
+		`WHERE repo.name like '%scorecard%'
+limit 1
+`
 	ctx := context.Background()
 
 	client, err := bq.NewClient(ctx, b.project)
@@ -93,18 +96,9 @@ func NewBigquery(projectid string) Bigquery {
 }
 
 func query(ctx context.Context, sql string, allchecks, repos []string,
-	client *bq.Client) (*bq.RowIterator, error) {
+	client *bq.Client,
+) (*bq.RowIterator, error) {
 	query := client.Query(sql)
-	query.Parameters = []bq.QueryParameter{
-		{
-			Name:  "repos",
-			Value: repos,
-		},
-		{
-			Name:  "checks",
-			Value: allchecks,
-		},
-	}
 	return query.Read(context.TODO())
 }
 
@@ -118,12 +112,6 @@ func fetchResults(iter *bq.RowIterator, exclusions map[Key]bool) ([]Scorecard, e
 		}
 		if err != nil {
 			return nil, err
-		}
-		if exclusions != nil {
-			// If the particular item is in the exclude list ignore it in the results.
-			if _, ok := exclusions[Key{Check: row.Check, Repoistory: row.Name}]; ok {
-				continue
-			}
 		}
 		rows = append(rows, row)
 	}
