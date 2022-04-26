@@ -9,5 +9,5 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.11.0
 	github.com/ugorji/go v1.2.6 // indirect
-	google.golang.org/api v0.74.0
+	google.golang.org/api v0.76.0
 )
