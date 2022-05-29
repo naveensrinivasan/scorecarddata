@@ -7,7 +7,7 @@ require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
 	github.com/spf13/cobra v1.4.0
-	github.com/spf13/viper v1.11.0
+	github.com/spf13/viper v1.12.0
 	github.com/ugorji/go v1.2.6 // indirect
-	google.golang.org/api v0.77.0
+	google.golang.org/api v0.81.0
 )
