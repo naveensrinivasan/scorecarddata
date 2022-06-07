@@ -7,5 +7,5 @@ require (
 	github.com/gin-gonic/gin v1.8.0
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.12.0
-	google.golang.org/api v0.81.0
+	google.golang.org/api v0.83.0
 )
